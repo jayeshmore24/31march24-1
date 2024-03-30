@@ -4,8 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        span#a1{
+            display: block;
+            background-color: aquamarine;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        span.b1{
+            background-color: rgb(151, 95, 203);
+            display: block;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        h1::after{
+            content: url(./face.gif);
+            height: 200px;
+            width: 200px;
+        }
+
+        div#c1:hover{
+            background-color: brown;
+        }
+
+        div,span#a1,span.b1,h1{
+            border: 10px solid black;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div>CSS attribute selector</div>
+    <span id="a1">CSS id Selector</span>
+    <span class="b1">CSS class Selector</span>
+    <h1>CSS pesudo Element Selector</h1>
+    <div id="c1">CSS pesudo id Selector</div>
+
 </body>
 </html>
